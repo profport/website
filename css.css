@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+body {
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    margin: 0;
+}
+.center {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+aside {
+    min-width: 300px;
+    width: 32%;
+    background-color: #F4F4F4;
+}
+aside section {
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+aside h2 {
+    margin-top: 0;
+    padding: 3px 10px;
+    font-weight: normal;
+    font-size: 90%;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 6px;
+}
+aside section a span {
+    color: #2E2EAD;
+    font-size: 90%;
+}
+aside section li {
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
+.cntLine {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.cntLine2 {
+    display: flex;
+    margin-top: 15px;
+}
+#imgLogo {
+    display: block;
+    width: 153px;
+    height: 153px;
+    border-radius: 50%;
+    margin: 10px auto 40px auto;
+}
+.imgType1 {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.imgType2 {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.imgType3 {
+    width: 16px;
+    height: 15px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.imgType4 {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.imgType5 {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+main {
+    flex: 1;
+    min-width: 500px;
+    margin: 0 20px 30px 20px;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 220%;
+    font-weight: normal;
+    margin: 40px 0 55px 0;
+}
+#Hpart2 {
+    font-size: 90%;
+}
+#Hpart3 {
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    font-size: 55%;
+    margin-top: 20px;
+}
+main section {
+    margin-top: 40px;
+}
+main section h2 {
+    display: flex;
+    font-size: 110%;
+    font-weight: normal;
+    margin-top: 0;
+}
+main section h2 div {
+    margin-right: 20px;
+}
+main section h2 hr {
+    flex: 1;
+    height: 1px;
+    margin-top: 1.2ex;
+}
+article {
+    margin-top: 20px;
+}
+article h3 {
+    font-weight: normal;
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+article header h3 {
+    font-weight: 500;
+    font-size: 110%;
+    margin: 10px 0;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+article ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+article p {
+    margin: 0 0 5px 0;
+}
+.content {
+    font-size: 95%;
+}
+.mobSection {
+    display: none;
+}
+.on {
+    display: block !important;
+}
+section#secEducation h3 {
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 110%;
+}
+
+@media print {
+    .printHide {
+        display: none;
+    }
+    aside section a span {
+        color: black;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .center {
+        display: none;
+    }
+    .mobSection {
+        display: block;
+        padding: 0 20px;
+    }
+    .mobHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    #LogoMob {
+        width: 87px;
+        height: 42px;
+        margin-right: 10px;
+    }
+    #Hpart1 {
+        font-size: 140%;
+        line-height: 1;
+    }
+    #Hpart2 {
+        font-size: 140%;
+        line-height: 1;
+
+    }
+    #Hpart3 {
+        font-size: 120%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .sectHeader {
+        font-weight: normal;
+        font-size: 130%;
+        text-align: center;
+        margin: 50px auto 0 auto;
+    }
+    .sect {
+        display: none;
+        padding-bottom: 20px;
+    }
+    #secSummary h2, #secExperience h2, #secEducation h2 {
+        margin: 10px auto;
+    }
+    #secSummary h2 hr, #secExperience h2 hr, #secEducation h2 hr {
+        display: none;
+    }
+    #secContacts, #secSkills, #secSummary, #secExperience, #secEducation {
+        padding-bottom: 0;
+    }
+    .footer {
+        height: 50px;
+    }
+    article header {
+        display: block;
+    }
+    article header h3 {
+        margin: 0;
+        font-family: Geneva, Tahoma, sans-serif;
+    }
+    article header time {
+        display: block;
+        font-size: 110%;
+        font-family: Geneva, Tahoma, sans-serif;
+        margin-bottom: 5px;
+    }
+}
