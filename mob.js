@@ -1,5 +1,4 @@
 let body = document.querySelector("body");
-let Hpart1 = document.querySelector("#Hpart1").cloneNode(true);
 let Hpart2 = document.querySelector("#Hpart2").cloneNode(true);
 let Hpart3 = document.querySelector("#Hpart3").cloneNode(true);
 
@@ -75,8 +74,8 @@ let footer = document.createElement("footer");
 footer.className = "footer";
 
 
-Hname.append(Hpart1, Hpart2);
-mobHeader.append(imgLogo, Hname);
+Hname.append(Hpart2);
+mobHeader.append(Hname);
 mobSection.append(
     mobHeader, Hpart3,
     hContacts, secContacts,
